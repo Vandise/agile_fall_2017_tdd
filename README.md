@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JUnit Testing
 Now it's time to demonstrate your ability to use objects in the Java
 programming language with TDD.
@@ -107,3 +108,6 @@ This assessment is worth 40 points.
         1. Do not write any code unless it's to make a failing test pass.
         2. Do not write any more of a unit test than is  sufficient to fail, and not compiling is failing.
         3. Do not write more code than you need to make the current unit test pass.
+=======
+# agile_sp_2017_teamtrifecta
+>>>>>>> Added readme
