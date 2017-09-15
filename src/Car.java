@@ -53,7 +53,6 @@ public class Car {
 		
 		String output = "Color: " + color + ", " + "Speed: " + speed;
 		
-		
 		return(output);
 	}
 }
