@@ -2,7 +2,7 @@
  * Implementation of a Car object for a game or simulation.
  * Includes acceleration and deceleration.
  * @author Brian Hogan
- * @author yourname
+ * @author Jason Fellows
  */
 public class Car {
 
@@ -50,7 +50,10 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		
+		String output = "Color: " + color + ", " + "Speed: " + speed;
+		
+		
+		return(output);
 	}
 }
