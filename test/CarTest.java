@@ -2,7 +2,6 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
 import org.junit.Test;
-
 public class CarTest {
 
 	@Test 
@@ -28,11 +27,23 @@ public class CarTest {
 	@Test 
 	public void canDoToString(){
 		Car car1 = new Car("Red", 100);
-		assertThat(car1.toString(), is("Color: Red, Speed: 0"));
+		car1.toString();
+		assertThat(car1.toString(), is("Color: Red, Speed: 100"));
 	}
 
 	// Create and pass test for deceleration.
+	@Test
+	public void carColor(){
+		Car car1 = new Car("Red", 100);
 	
+		assertThat(car1.getColor(), is("Red"));
+	}
 	// Create and pass test for no deceleration below 0.
 	
+	@Test
+	public void reverseSpeed(){
+		Car car1 = new Car("Red", 100);
+		car1.accelerate(-10);
+		assertThat(car1.getSpeed(), is(-10));
+	}
 }
