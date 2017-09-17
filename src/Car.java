@@ -53,4 +53,24 @@ public class Car {
 		// not implemented!
 		return("Color: Red, Speed: 100");
 	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+
+	public void setMaxSpeed(int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
 }
