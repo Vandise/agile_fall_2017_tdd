@@ -43,6 +43,14 @@ public class Car {
 			speed+= amount;
 		}
 	}
+	
+	public void decelerate(int amount) {
+		if(speed - amount <= 0) {
+			this.speed = 0;
+		}else {
+			this.speed -= amount;
+		}
+	}
 
 	@Override
 	public String toString() {
