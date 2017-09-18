@@ -55,12 +55,4 @@ public class Car {
 		return("Color: " + color + ", Speed: " + speed);
 	}
 	
-	public void decelerate(int amount) {	
-		int minlimit = minSpeed;
-		if(amount < minlimit){
-			speed = minSpeed;
-		} else{
-			speed = maxSpeed - amount;
-		}
-	}
 }
