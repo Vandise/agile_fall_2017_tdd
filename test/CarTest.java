@@ -41,15 +41,16 @@ public class CarTest {
 	public void decelerate(){
 		Car car1 = new Car("Red", 100);
 		car1.accelerate(10);
-		car1.decelerate(-20);
+		car1.decelerate(-10);
 		assertThat(car1.getSpeed(), is(0));
 	}
 	// Create and pass test for no deceleration below 0.
 	
 	@Test
-	public void reverseSpeed(){
+	public void decelerateNotPastZero(){
 		Car car1 = new Car("Red", 100);
-		car1.accelerate(-10);
-		assertThat(car1.getSpeed(), is(-10));
+		car1.accelerate(10);
+		car1.decelerate(-20);
+		assertThat(car1.getSpeed(), is(0));
 	}
 }

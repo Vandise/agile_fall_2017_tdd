@@ -50,7 +50,6 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
 		return("Color: " + this.color + ", Speed: " + this.maxSpeed);
 	}
 
@@ -63,5 +62,6 @@ public class Car {
 			speed-= amount;
 		}
 	}
-		
 }
+		
+
