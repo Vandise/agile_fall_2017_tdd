@@ -51,26 +51,17 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return("Color: Red, Speed: 100");
+		return("Color: " + this.color + ", Speed: " + this.maxSpeed);
 	}
 
-	public String getColor() {
-		return color;
-	}
 
-	public void setColor(String color) {
-		this.color = color;
+	public void decelerate(int amount) {
+		int limit = 0;
+		if(amount <= limit){
+			speed = limit;
+		}else{
+			speed-= amount;
+		}
 	}
-
-	public int getMaxSpeed() {
-		return maxSpeed;
-	}
-
-	public void setMaxSpeed(int maxSpeed) {
-		this.maxSpeed = maxSpeed;
-	}
-
-	public void setSpeed(int speed) {
-		this.speed = speed;
-	}
+		
 }
