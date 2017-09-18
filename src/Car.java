@@ -9,6 +9,7 @@ public class Car {
 	private String color;
 	private int speed;
 	private int maxSpeed;
+	private int minSpeed;
 	
 	/**
 	 * Creates a new car instance
@@ -19,6 +20,7 @@ public class Car {
 		// using this. prefix to avoid shadowing local params.
 		this.color = color;
 		this.maxSpeed = maxSpeed;
+		this.minSpeed = 0;
 		this.speed = 0;
 	}
 	
@@ -50,7 +52,16 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		return("Color: " + color + ", Speed: " + speed);
 	}
+
+	public void decelerate(int amount) {
+		int limit = minSpeed;
+		if (amount < limit){
+			speed = limit;
+		} else {
+			speed -= amount;
+		}
+	}
+	
 }
