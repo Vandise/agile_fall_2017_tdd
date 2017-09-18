@@ -45,6 +45,16 @@ public class Car {
 	}
 	
 	/**
+	 * Decelerates the car
+	 * set in the object constructor.
+	 * @param amount	The amount the car will decelerate
+	 */
+	
+	public void decelerate(int amount) {
+		speed -= amount;
+	}
+	
+	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
