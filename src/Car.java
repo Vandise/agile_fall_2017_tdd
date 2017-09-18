@@ -43,14 +43,17 @@ public class Car {
 			speed+= amount;
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Car [color=" + color + ", speed=" + speed + ", maxSpeed=" + maxSpeed + "]";
+		
+	}
 	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
 	 */
-	public String toString(){
-		// not implemented!
-		return("");
-	}
+	
 }
