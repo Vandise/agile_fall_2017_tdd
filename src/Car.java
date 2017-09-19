@@ -9,6 +9,7 @@ public class Car {
 	private String color;
 	private int speed;
 	private int maxSpeed;
+	private int minSpeed;
 	
 	/**
 	 * Creates a new car instance
@@ -20,6 +21,7 @@ public class Car {
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 		this.speed = 0;
+		this.minSpeed = 0;
 	}
 	
 	/**
@@ -45,7 +47,11 @@ public class Car {
 	}
 	
 	public void decelerate(int amount) {
-		speed -= amount;
+		if (speed <= minSpeed) {
+			speed = 0;
+		}else{
+			speed -= amount;
+		}
 	}
 	
 	/**
