@@ -28,11 +28,24 @@ public class CarTest {
 	@Test 
 	public void canDoToString(){
 		Car car1 = new Car("Red", 100);
-		assertThat(car1.toString(), is("Color: Red, Speed: 0"));
+		assertThat(car1.toString(), is("Color: Red, Speed: 100"));
 	}
 
 	// Create and pass test for deceleration.
-	
+	public void decelerate(int amount) {
+		// TODO Auto-generated method stub
+		int limit = minSpeed + speed;
+		if(amount <= limit){
+			speed = limit;
+		}else{
+			speed-= amount;
+		}
+	}
 	// Create and pass test for no deceleration below 0.
-	
+	@Test
+		public void cannotDecelerateBelowZero(){
+			Car car1 = new Car("Red", 100);
+			car1.decelerate(-1);
+			assertThat(car1.getSpeed(), is(0));
+		}
 }
