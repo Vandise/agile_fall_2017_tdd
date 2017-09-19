@@ -53,9 +53,9 @@ public class Car {
 		return ("Color: " + color.toString() + ", Speed: " + speed);
 	}
 
-	public void decelerate(int i) {
-		// TODO Auto-generated method stub
-		
+	public void decelerate(int amount) {
+		int currentSpeed = speed;
+		speed = currentSpeed - amount;
 	}
 
 
