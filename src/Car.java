@@ -20,6 +20,7 @@ public class Car {
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 		this.speed = 0;
+		
 	}
 	
 	/**
@@ -45,6 +46,7 @@ public class Car {
 	}
 	
 	public void decelerate(int amount){
+		speed = 10;
 		speed -= amount;
 	}
 	
