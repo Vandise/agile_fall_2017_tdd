@@ -52,4 +52,11 @@ public class Car {
 	public String toString(){
 		return ("Color: " + color.toString() + ", Speed: " + speed);
 	}
+
+	public void decelerate(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 }
