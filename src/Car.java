@@ -60,7 +60,7 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
+		
 		return("Color: "+ color + ", Speed: " + speed);
 	}
 }
