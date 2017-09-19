@@ -40,7 +40,7 @@ public class Car {
 		if(amount >= limit){
 			speed = limit;
 		}else{
-			speed+= amount;
+			speed += amount;
 		}
 	}
 	
@@ -50,7 +50,6 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		return("Color: " + color + ", Speed: " + speed);
 	}
 }
