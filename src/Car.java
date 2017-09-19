@@ -9,6 +9,7 @@ public class Car {
 	private String color;
 	private int speed;
 	private int maxSpeed;
+	private int minSpeed;
 	
 	/**
 	 * Creates a new car instance
@@ -20,6 +21,7 @@ public class Car {
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 		this.speed = 0;
+		this.minSpeed = 0;
 	}
 	
 	/**
@@ -40,7 +42,15 @@ public class Car {
 		if(amount >= limit){
 			speed = limit;
 		}else{
-			speed+= amount;
+			speed += amount;
+		}
+	}
+	
+	public void decelerate(int amount) {
+		if (speed <= minSpeed) {
+			speed = 0;
+		}else{
+			speed -= amount;
 		}
 	}
 	
@@ -50,7 +60,6 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		return("Color: " + color + ", Speed: " + speed);
 	}
 }
