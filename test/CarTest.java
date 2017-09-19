@@ -32,7 +32,15 @@ public class CarTest {
 	}
 
 	// Create and pass test for deceleration.
-	
+	public void decelerate(int amount) {
+		// TODO Auto-generated method stub
+		int limit = minSpeed + speed;
+		if(amount <= limit){
+			speed = limit;
+		}else{
+			speed-= amount;
+		}
+	}
 	// Create and pass test for no deceleration below 0.
 	
 }
