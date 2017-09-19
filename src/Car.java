@@ -2,7 +2,7 @@
  * Implementation of a Car object for a game or simulation.
  * Includes acceleration and deceleration.
  * @author Brian Hogan
- * @author yourname
+ * @author zschullo
  */
 public class Car {
 
@@ -46,7 +46,6 @@ public class Car {
 	}
 	
 	public void decelerate(int amount){
-		speed = 10;
 		speed -= amount;
 	}
 	
