@@ -53,10 +53,15 @@ public class Car {
 		return ("Color: " + color.toString() + ", Speed: " + speed);
 	}
 
+	
 	public void decelerate(int amount) {
 		int currentSpeed = speed;
-		speed = currentSpeed - amount;
+		if(amount > currentSpeed) {
+			speed = 0;
+		} else {
+			speed = (currentSpeed - amount);
+		}
+		
 	}
-
 
 }
