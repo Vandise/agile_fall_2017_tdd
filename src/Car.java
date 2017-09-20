@@ -54,6 +54,10 @@ public class Car {
 	}
 	
 	public void decelerate(int amount){
-		speed -= amount;
+		if(amount > speed){
+			speed = 0;
+		}else{
+			speed -= amount;
+		}
 	}
 }
