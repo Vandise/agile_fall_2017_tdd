@@ -54,4 +54,8 @@ public class Car {
 		result.append("Color: " + color + ", Speed: " + speed);
 		return result.toString();
 	}
+
+	public void decelerate(int amount) {
+			speed-= amount;		
+	}
 }
