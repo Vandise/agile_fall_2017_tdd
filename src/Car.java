@@ -44,13 +44,24 @@ public class Car {
 		}
 	}
 	
+	public void decelerate(int amount) {
+		if(speed - amount <= 0) {
+			this.speed = 0;
+		}else {
+			this.speed -= amount;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Car [color=" + color + ", speed=" + speed + ", maxSpeed=" + maxSpeed + "]";
+		
+	}
+	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
 	 */
-	public String toString(){
-		// not implemented!
-		return("");
-	}
+	
 }
