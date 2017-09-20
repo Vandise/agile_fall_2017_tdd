@@ -21,6 +21,12 @@ public class Car {
 		this.maxSpeed = maxSpeed;
 		this.speed = 0;
 	}
+	public Car(String color, int maxSpeed, int speed){
+		// using this. prefix to avoid shadowing local params.
+		this.color = color;
+		this.maxSpeed = maxSpeed;
+		this.speed = speed;
+	}
 	
 	/**
 	 * Return the current speed of the car.
@@ -50,7 +56,14 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
 		return("Color: " + this.color + ", Speed: " + this.speed);
+	}
+	
+	public void decelerate(int amount){
+		if(amount <= 0){
+			speed = 0;
+		}else{
+			speed = speed-amount;
+		}
 	}
 }
