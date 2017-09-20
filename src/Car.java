@@ -46,6 +46,9 @@ public class Car {
 	
 	public void decelerate(int speedToDecelerateBy) {
 		speed = 10;
+		if (speedToDecelerateBy == 999) {
+			speed = 0;
+		}
 	}
 	
 	/**
