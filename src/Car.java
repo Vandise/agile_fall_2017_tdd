@@ -59,8 +59,17 @@ public class Car {
 	 * @param amount	The amount the car will decelerate
 	 */
 	public void decelerate(int amount) {
+		/*No acceleration method was added initially because:
+		 * You are not allowed to write any more production code 
+		 * than is sufficient to pass the one failing unit test.
+		 * Though by the same standard I erred by writing limit = 0 
+		 * before it was necessary...*/
 		int limit = 0;
-		speed = speed - amount; 
+		if(speed - amount <= limit) {
+			speed = limit;
+		}else {
+			speed-= amount;
+		} 
 	}
 	
 }
