@@ -53,4 +53,11 @@ public class Car {
 		// not implemented!
 		return("Color: " + this.color + ", Speed: " + this.speed);
 	}
+	
+	/**
+	 * Decelerates the car down to the minimum amount, 0.
+	 * @param amount	The amount the car will decelerate
+	 */
+	
+	
 }
