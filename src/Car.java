@@ -51,13 +51,16 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return("Color: " + this.color + ", Speed: " + this.speed);
+		return("Color: " + color + ", Speed: " + speed);
 	}
 	
 	/**
 	 * Decelerates the car down to the minimum amount, 0.
 	 * @param amount	The amount the car will decelerate
 	 */
-	
+	public void decelerate(int amount) {
+		int limit = 0;
+		speed = speed - amount; 
+	}
 	
 }
