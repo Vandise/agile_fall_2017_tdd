@@ -50,6 +50,10 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		return("Color: " + this.color + ", Speed: " + this.speed);
+		return("Color: " + color + ", Speed: " + speed);
+	}
+	
+	public void decelerate (int amount){
+		speed-= amount;
 	}
 }
