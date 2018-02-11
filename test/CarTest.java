@@ -43,7 +43,7 @@ public class CarTest {
 	@Test
 	public void cannotDeccelerateBelowZero() {
 		Car car1 = new Car("Red", 100);
-		car1.deccelerate(101);
+		car1.deccelerateLimit(101);
 		assertThat(car1.getSpeed(), is(0));
 	}
 }
