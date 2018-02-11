@@ -52,4 +52,27 @@ public class Car {
 	public String toString(){
 		return("Color: " + this.color + ", Speed: " + this.speed);
 	}
+	
+	
+	
+	public int deccelerate(int amount) {
+		this.speed = this.speed - amount;
+		return this.speed;
+	}
+	
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
