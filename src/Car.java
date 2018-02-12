@@ -51,6 +51,18 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return("");
+		return ("Color: " + color + "Speed: " + speed);
+	}
+	
+	public void decelerate(int amount) {
+		if (speed >= 1) {
+			speed-=amount;
+		}else{
+			speed = 0;
+		}
+	}
+	
+	public void cannotDecelerate() {
+		
 	}
 }
