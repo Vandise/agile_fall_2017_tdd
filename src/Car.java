@@ -44,6 +44,15 @@ public class Car {
 		}
 	}
 	
+	
+	public int decelerate(int amount) {
+
+		this.speed -= amount;
+		
+		return amount;
+	}
+	
+	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
@@ -51,6 +60,6 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return("");
+		return("Color: Red, Speed: 0");
 	}
 }
