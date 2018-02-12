@@ -20,8 +20,9 @@ public void testCarToString() {
 
 @Test
 public void testCarDecelerate() {
-	Car car = new Car("red", 100);
-	car.accelerate(20);
+	Car car = new Car("red", 20);
+	car.accelerate(10);
+	car.decelerate(10);
 	assertThat(car.getSpeed(), is(10));
 	}
 
