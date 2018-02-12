@@ -1,3 +1,4 @@
+package main;
 /**
  * Implementation of a Car object for a game or simulation.
  * Includes acceleration and deceleration.
@@ -27,7 +28,7 @@ public class Car {
 	 * @return the current speed of the car.
 	 */
 	public int getSpeed(){
-		return(speed);
+		return speed;
 	};
 	
 	/**
@@ -44,6 +45,15 @@ public class Car {
 		}
 	}
 	
+	public void decelerate(int amount) {
+		if(speed - amount <= 0) {
+			speed = 0;
+		} else {
+			speed-= amount;
+		}
+
+	}
+	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
@@ -51,6 +61,7 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return("");
+		return "Color: " + this.color + ", Speed: " + this.speed;
 	}
+
 }

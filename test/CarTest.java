@@ -3,6 +3,8 @@ import static org.hamcrest.CoreMatchers.is;
 
 import org.junit.Test;
 
+import main.Car;
+
 public class CarTest {
 
 	@Test 
