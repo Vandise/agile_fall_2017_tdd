@@ -51,7 +51,7 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return ("Color: " + color + ", " + "Speed: " + speed);
+		return String.format("Color: " + color + ", " + "Speed: " + speed);
 	}
 	
 	public void decelerate(int amount) {
