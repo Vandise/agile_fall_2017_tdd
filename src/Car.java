@@ -45,7 +45,10 @@ public class Car {
 	}
 	
 	
+	public int decelerate(int amount) {
+		return amount;
 
+	}
 	
 	
 	/**
