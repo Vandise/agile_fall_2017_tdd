@@ -16,12 +16,19 @@ public void testCarToString() {
 	assertThat(new Car("red", 100).toString(), is("Color: red, Speed: 0"));
 	}
 
-
+@Test
+public void testCarAccelerate() {
+	
+	Car testCar = new Car("red", 100);
+	testCar.accelerate(200);
+	assertThat(testCar.getSpeed(), is(100));
+	
+}
 
 @Test
 public void testCarDecelerate() {
-	Car car = new Car("red", 20);
-	car.accelerate(10);
+	Car car = new Car("red", 200);
+	car.accelerate(20);
 	car.decelerate(10);
 	assertThat(car.getSpeed(), is(10));
 	}
