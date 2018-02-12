@@ -1,4 +1,5 @@
 package tests;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,8 +12,8 @@ import tests.CarTest;
 public class CarTest {
 
 	@Test
-	void testCarToString() {
-		assertThat(new Car("red", 100).toString(), is("Color: red, Speed: 100"));
+public	void testCarToString() {
+	assertThat(new Car("red", 100).toString(), is("Color: red, Speed: 0"));
 	}
 
 }
