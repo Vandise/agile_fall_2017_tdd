@@ -34,6 +34,7 @@ public class CarTest {
 	@Test
 	public void canDecelerate(){
 		Car car1 = new Car("", 100);
+		car1.accelerate(100);
 		car1.decelerate(25);
 		assertThat(car1.getSpeed(), is(75));
 	}
