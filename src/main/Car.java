@@ -28,7 +28,7 @@ public class Car {
 	 * @return the current speed of the car.
 	 */
 	public int getSpeed(){
-		return(speed);
+		return speed;
 	};
 	
 	/**
@@ -45,6 +45,11 @@ public class Car {
 		}
 	}
 	
+	public void decelerate(int amount) {
+		
+		speed-= amount;
+	}
+	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
@@ -54,4 +59,5 @@ public class Car {
 		// not implemented!
 		return "Color: " + this.color + ", Speed: " + this.speed;
 	}
+
 }
