@@ -16,10 +16,12 @@ public class Car {
 	 * @param maxSpeed
 	 */
 	public Car(String color, int maxSpeed){
+		
 		// using this. prefix to avoid shadowing local params.
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 		this.speed = 0;
+		
 	}
 	
 	/**
@@ -27,7 +29,9 @@ public class Car {
 	 * @return the current speed of the car.
 	 */
 	public int getSpeed(){
+		
 		return(speed);
+		
 	};
 	
 	/**
@@ -36,11 +40,17 @@ public class Car {
 	 * @param amount	The amount the car will accelerate
 	 */
 	public void accelerate(int amount){
+		
 		int limit = maxSpeed - speed;
+		
 		if(amount >= limit){
+			
 			speed = limit;
+			
 		}else{
+			
 			speed+= amount;
+			
 		}
 	}
 	
@@ -50,7 +60,20 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		
+		return("Color: " + color + ", Speed: " + speed);
+		
+	}
+
+	public void decelerate(int amount) {
+		
+		int limit = maxSpeed - speed;
+		
+		if (amount >= limit) {
+			speed = limit;
+		} else {
+			speed-= amount;
+		}
+		
 	}
 }
