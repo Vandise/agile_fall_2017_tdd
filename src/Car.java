@@ -45,7 +45,7 @@ public class Car {
 	}
 	
 	public void decelerate(int amount) {
-		this.speed -= amount;
+		this.speed -= amount;		
 	}
 	
 	/**
