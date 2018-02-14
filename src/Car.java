@@ -62,4 +62,12 @@ public class Car {
 			speed -= amount;
 		}
 	}
+	
+	public void deceleratePastZero(int amount) {
+		int speed = this.speed;
+		int negLimit = 0;
+		if(speed < negLimit ) {
+			speed = negLimit;	
+		}
+	}
 }
