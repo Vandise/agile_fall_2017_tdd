@@ -48,6 +48,7 @@ public class Car {
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
+	 * Fixed the toString test
 	 */
 	public String toString(){
 		return("Color: " + color + ", Speed: " + speed);
