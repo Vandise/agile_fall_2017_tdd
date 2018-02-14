@@ -53,4 +53,12 @@ public class Car {
 	public String toString(){
 		return("Color: " + color + ", Speed: " + speed);
 	}
+	
+	/**
+	 * Decelerates the car by a specified amount
+	 * @param amount	The amount the car will decelerate
+	 */
+	public void decelerate(int amount){
+			speed -= amount;
+	}
 }
