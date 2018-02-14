@@ -2,7 +2,7 @@
  * Implementation of a Car object for a game or simulation.
  * Includes acceleration and deceleration.
  * @author Brian Hogan
- * @author yourname
+ * @author Casey Capozzi
  */
 public class Car {
 
@@ -45,12 +45,25 @@ public class Car {
 	}
 	
 	/**
+	 * Decelerates the car until it has stopped moving.
+	 * @param amount	The amount the car will decelerate
+	 */
+	public void decelerate(int amount){
+		
+		if (speed > amount) {
+			speed -= amount;
+		} else {
+			speed = 0;
+		}
+	}
+	
+	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		
+		return("Color: " + color + ", Speed: " + speed);
 	}
 }
