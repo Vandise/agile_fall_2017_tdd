@@ -44,13 +44,16 @@ public class Car {
 		}
 	}
 	
+	public void decelerate(int amount) {
+		speed -= speed-amount < 0 ? speed : amount;
+	}
+	
 	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		return("Color: " + color + ", Speed: " + speed);
 	}
 }
