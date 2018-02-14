@@ -54,4 +54,12 @@ public class Car {
 		String colorAndSpeed = "Color: " + color + ", Speed: " + speed;
 		return(colorAndSpeed);
 	}
+	
+	public void decelerate(int amount) {
+		int speed = this.speed;
+		
+		if(speed != 0) {
+			speed -= amount;
+		}
+	}
 }
