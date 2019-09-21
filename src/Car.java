@@ -2,7 +2,7 @@
  * Implementation of a Car object for a game or simulation.
  * Includes acceleration and deceleration.
  * @author Brian Hogan
- * @author yourname
+ * @author Seth Schalinske
  */
 public class Car {
 
@@ -57,6 +57,25 @@ public class Car {
 	 */
 	public String toString(){
 		// not implemented!
-		return("");
+		return("Color: " + color + ", Speed: " + speed);
 	}
+	
+	/**
+	 * Decelerates the car down to the minimum amount, 0.
+	 * @param amount	The amount the car will decelerate
+	 */
+	public void decelerate(int amount) {
+		/*No acceleration method was added initially because:
+		 * You are not allowed to write any more production code 
+		 * than is sufficient to pass the one failing unit test.
+		 * Though by the same standard I erred by writing limit = 0 
+		 * before it was necessary...*/
+		int limit = 0;
+		if(speed - amount <= limit) {
+			speed = limit;
+		}else {
+			speed-= amount;
+		} 
+	}
+	
 }
