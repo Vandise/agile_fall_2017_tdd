@@ -2,7 +2,7 @@
  * Implementation of a Car object for a game or simulation.
  * Includes acceleration and deceleration.
  * @author Brian Hogan
- * @author yourname
+ * @author William Ramirez
  */
 public class Car {
 
@@ -51,12 +51,32 @@ public class Car {
   }
 
 	/**
+	 * decelerates the car up to the maximum amount
+	 * set in the object constructor.
+	 * @param amount	Pass an amount as its argument, that the speed property decreases by that amount
+	 */
+	
+	public void decelerate(int amount){
+		int limit = maxSpeed -	 speed;
+		if (amount >= limit){
+			speed = limit;
+		}else{
+			speed-= amount;
+			if (speed < 0) {
+				speed = 0;
+			}
+
+		}
+
+	}
+	
+	/**
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 * @return string representation of object. 
 	 */
 	public String toString(){
 		// not implemented!
-		return("");
+		return("Color: " + this.color + ", Speed: " + this.speed);
 	}
 }
