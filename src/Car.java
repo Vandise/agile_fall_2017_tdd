@@ -56,7 +56,24 @@ public class Car {
 	 * @return string representation of object. 
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		
+		String colorAndSpeed = "Color: " + color + ", Speed: " + speed;
+		return(colorAndSpeed);
+	}
+	
+	public void decelerate(int amount) {
+		int speed = this.speed;
+		
+		if(speed != 0) {
+			speed -= amount;
+		}
+	}
+	
+	public void deceleratePastZero(int amount) {
+		int speed = this.speed;
+		int negLimit = 0;
+		if(speed < negLimit ) {
+			speed = negLimit;	
+		}
 	}
 }
